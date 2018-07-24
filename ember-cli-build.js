@@ -5,11 +5,21 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
+    fontawesome: {
+      icons: {
+        'free-solid-svg-icons': 'all'
+      }
+    }
   });
 
-  // Use `app.import` to add additional libraries to the generated
+  // Use `app.import` to add additional libraries to 6the generated
   // output files.
   //
+  app.import('node_modules/materialize-css/dist/css/materialize.min.css');
+  app.import('node_modules/materialize-css/dist/js/materialize.min.js');
+
+  // app.import('public/fontawesome.css');
+  //app.import('vendor/font-awesome-5/solid.js');
   // If you need to use different assets in different
   // environments, specify an object as the first parameter. That
   // object's keys should be the environment name and the values

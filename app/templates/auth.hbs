@@ -1,0 +1,31 @@
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center app-title">Alan's Book App</a>
+      <i class="material-icons menu">menu</i>
+      <i class="material-icons more-vert">more_vert</i>
+    </div>
+  </nav>
+
+ 
+	{{#jquery-wrapper
+		query='.tabs'
+		method='tabs'
+	}}
+	<ul class="tabs tabs-fixed-width tab-demo">
+		<li class="tab">{{#link-to 'auth.book-list'}}Books{{/link-to}}</li>
+	   	<li class="tab">{{#link-to 'auth.author-list'}}Authors{{/link-to}}</li>
+	   	<li class="tab">{{#link-to 'auth.purchase-list'}}Cart{{/link-to}}</li>
+	</ul>
+	{{/jquery-wrapper}}
+
+  {{outlet}}
+  
+  <div class="fixed-action-btn">
+  <a class="btn-floating btn-large red">
+    <i class="large material-icons">add</i>
+  </a>
+</div>
+
+<
+
+       

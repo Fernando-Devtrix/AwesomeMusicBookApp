@@ -1,0 +1,65 @@
+nav a.app-title{
+    width: 100%;
+    font-size: 1.5em
+}
+
+nav{
+    background-color:#00BBD3 
+}
+
+nav i.material-icons{
+    margin-left: 5%;
+    display: inline-block;
+    
+}
+
+nav i.more-vert{
+    margin-left: 80%;
+}
+
+ul.tabs{
+    background-color: #00BBD3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.tabs .tab a,
+.tabs .tab a:focus{
+    color: #fffdfda1;   
+    font-weight: 500;
+}
+
+.tabs .tab a:hover,
+.tabs .tab a:focus,
+.tabs .tab a.active{
+    border-bottom: 5px solid #FBC02D;
+    color: white;
+    outline: none;
+}
+
+li.indicator{
+    display: none;
+}
+i.large.material-icons{
+    background: #FBC02D;
+    outline: none;
+}
+
+.avatar{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-position: center;
+	background-size: cover;
+}
+/* div.book-author-positition{
+    float: left;
+    margin-left: 80px;
+    margin-top: -10%;
+} */
+
+/* img.responsive-img{
+    margin-top: 60%;
+    margin-left: 40%;
+
+} */

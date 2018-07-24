@@ -2,6 +2,9 @@
 
 module.exports = function(environment) {
   let ENV = {
+    fontawesome: {
+      defaultPrefix: 'fal' // light icons
+    },
     modulePrefix: 'music-book-app',
     environment,
     rootURL: '/',

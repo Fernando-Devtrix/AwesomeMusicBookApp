@@ -7,6 +7,14 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('auth', {path: '/'}, function() {
+    this.route('book-list');
+    this.route('book-edit');
+    this.route('author-list');
+    this.route('author-edit');
+    this.route('purchase-list');
+    this.route('purchase-new');  
+  });
 });
 
 export default Router;
