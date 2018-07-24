@@ -8,29 +8,33 @@
     </div>
   </div> --}}
 
-  	<div class="col s12">
-		    <div class="card-panel grey lighten-5">
+
+
+		 {{#each model as |book|}}
+	
+		<div class="col s12">
+		    <div class="card-panel grey lighten-5 z-depth-1">
 		      <div class="row valign-wrapper">
-		        <div class="col s3">
+		        <div class="col s2">
 		          {{!-- <img src={{book.imgUrl}} class="circle responsive-img"> <!-- notice the "circle" class --> --}}
 		          <div class="avatar">
-		          	     <img class="circle responsive-img" src="http://ep00.epimg.net/elpais/imagenes/2015/09/09/tentaciones/1441784322_695647_1441784486_noticia_normal.jpg">      
+		          	
 		          </div>
 		        </div>
-		        <div class="col s10">
+		        <div class="col s8">
 		          <span class="black-text">
-		            	{{!-- {{}} --}}
-                        <p>Book Name</p>
+		            	{{book.title}}
 		          </span>
 		          <br>
 		          <span class="grey-text">
-		          		{{!-- {{book.author.fullName}} --}}
-                        <p>Author</p>
+		          		{{book.author}}
 		          </span>
 		        </div>
-		        <div class="col s1">
-		        	 <i class="material-icons more-vert">more_vert</i>
+		        <div class="col s2">
+		        	      <i class="material-icons more-vert">more_vert</i>
 		        </div>
 		      </div>
 		    </div>
 		</div>
+
+ {{/each}}

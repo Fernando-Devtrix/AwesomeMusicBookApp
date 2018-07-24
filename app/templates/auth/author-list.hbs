@@ -1,1 +1,23 @@
-<h1>Author list</h1>
+ {{#each model as |author|}}
+		<div class="col s12">
+		    <div class="card-panel grey lighten-5 z-depth-1">
+		      <div class="row valign-wrapper">
+		        <div class="col s2">
+		          <img src="https://cdn.pixabay.com/photo/2016/11/29/12/41/desk-1869579_960_720.jpg" class="circle responsive-img" class="circle responsive-img"> 
+		        </div>
+		        <div class="col s8">
+		          <span class="black-text">
+		            	{{author.fullName}}
+		          </span>
+		          <br>
+		          <span class="grey-text">
+		          		{{author.nickname}}
+		          </span>
+		        </div>
+		        <div class="col s2">
+		        	      <i class="material-icons more-vert">more_vert</i>
+		        </div>
+		      </div>
+		    </div>
+		</div>
+{{/each}}
