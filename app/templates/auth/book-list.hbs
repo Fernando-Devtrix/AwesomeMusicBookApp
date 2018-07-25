@@ -10,31 +10,32 @@
 
 
 
-		 {{#each model as |book|}}
-	
+{{#each model as |music-book|}}
 		<div class="col s12">
-		    <div class="card-panel grey lighten-5 z-depth-1">
-		      <div class="row valign-wrapper">
-		        <div class="col s2">
-		          {{!-- <img src={{book.imgUrl}} class="circle responsive-img"> <!-- notice the "circle" class --> --}}
-		          <div class="avatar">
-		          	
-		          </div>
-		        </div>
-		        <div class="col s8">
-		          <span class="black-text">
-		            	{{book.title}}
-		          </span>
-		          <br>
-		          <span class="grey-text">
-		          		{{book.author}}
-		          </span>
-		        </div>
-		        <div class="col s2">
-		        	      <i class="material-icons more-vert">more_vert</i>
-		        </div>
-		      </div>
-		    </div>
-		</div>
-
- {{/each}}
+				<div class="card-panel grey lighten-5 z-depth-1">
+					<div class="row valign-wrapper">
+						<div class="col s2">
+							{{!-- <img src={{music-book.imgUrl}} class="circle responsive-img"> <!-- notice the "circle" class --> --}}
+							<div class="avatar">	
+								
+							</div>
+						</div>
+						<div class="col s8">
+							<span class="black-text">
+									{{music-book.title}}
+							</span>
+							<br>
+							<span class="grey-text">
+									{{music-book.author}}
+							</span>
+						</div>
+						<div class="col s2">
+										<i class="material-icons more-vert">more_vert</i>
+										{{#link-to 'auth.book-edit' music-book.id}}
+												Edit
+										{{/link-to}}
+						</div>
+					</div>
+				</div>
+			</div>
+{{/each}}	
