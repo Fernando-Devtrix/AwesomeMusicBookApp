@@ -9,7 +9,7 @@ export default Component.extend({
 		let query = this.get('query');
 		let method = this.get('method');
 		let options = this.get('options');
-		console.log(query,method,options);
+		// console.log(query,method,options);
 		$(query)[method](options);
 	}
 });
