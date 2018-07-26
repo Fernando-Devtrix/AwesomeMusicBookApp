@@ -15,7 +15,7 @@
 				<div class="card-panel grey lighten-5 z-depth-1">
 					<div class="row valign-wrapper">
 						<div class="col s2">
-							{{!-- <img src={{music-book.imgUrl}} class="circle responsive-img"> <!-- notice the "circle" class --> --}}
+								<img src={{music-book.imgUrl}} class="circle responsive-img"> <!-- notice the "circle" class --> 
 							<div class="avatar">	
 								
 							</div>
@@ -37,5 +37,10 @@
 						</div>
 					</div>
 				</div>
+			
 			</div>
 {{/each}}	
+
+<div class="fixed-action-btn">
+		 <a class="btn-floating btn-large waves-effect waves-light fixed-action-btn color" {{action 'addBook' on='click'}}><i class="material-icons">add</i></a>
+</div>

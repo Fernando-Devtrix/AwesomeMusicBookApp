@@ -40,7 +40,7 @@ ul.tabs{
 li.indicator{
     display: none;
 }
-i.large.material-icons{
+.btn-floating.btn-large i{
     background: #FBC02D;
     outline: none;
 }
