@@ -1,33 +1,27 @@
-	{{!--<form {{action 'saveAuthor' model on='submit'}}>
-		<div class="content">
-				<div class="data">
-				<p>First Name: <br> 
-					{{input type="text" value=model.firstName class="inputs-author" }}
-				</p>
-				<p>Last Name: <br> 
-					{{input type="text" value=model.lastName class="inputs-author"}}
-				</p>
-				<p>NickName: <br> 
-					{{input type="text" value=model.nickname class="inputs-author"}}
-				</p>
-				<p>Age: <br> 
-					{{input type="number" value=model.age class="inputs-author"}} 
-				</p>
-				<p>Full Name: <br> 
-					{{input type="text" value = model.fullName class="inputs-author"}}
-				</p>
-				<button class="btn" type="submit" disabled={{if model.isSaving 'true' ''}} >Save</button >
-				<button class="btn" disabled={{if model.isSaving 'true' ''}} {{action 'deleteBook' model on='click'}}>
-					Delete
-				</button>
-			</div>
-		</div>
-	
-	</form>--}}
-<form action="">
-     <div class="input-field col s6">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">First Name</label>
+<form {{action 'saveAuthor' model on='submit'}}>
+    <div class="">
+        <div class="">
+
+             <div class="container form-group row">
+                 <label for="example-text-input" class="col-2 col-form-label">Author Name</label>
+                <div class="col-10">
+                {{input class="form-control" type="text" value=model.first_name}}
+                </div>
+            </div>
+            <div class="container form-group row">
+                <label for="example-text-input" class="col-2 col-form-label">Last Name</label>
+                <div class="col-10">
+                {{input class="form-control" type="text" value=model.last_name}}
+                </div>
+            </div>
+            <div class="container form-group row">
+                <label for="example-text-input" class="col-2 col-form-label">Nick Name</label>
+                <div class="col-10">
+                {{input class="form-control" type="text" value=model.nickname}}
+                </div>
+            </div>
+             <button type="submit" class="btn btn-success" disabled={{if model.isSaving 'true' ''}}>Update Data</button>
+             <button class="btn btn-danger" {{action 'destroyAuthor' model on='click'}}>Delete Author</button>
+        </div>
     </div>
 </form>
