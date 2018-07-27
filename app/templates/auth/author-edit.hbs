@@ -1,1 +1,33 @@
-{{outlet}}
+	{{!--<form {{action 'saveAuthor' model on='submit'}}>
+		<div class="content">
+				<div class="data">
+				<p>First Name: <br> 
+					{{input type="text" value=model.firstName class="inputs-author" }}
+				</p>
+				<p>Last Name: <br> 
+					{{input type="text" value=model.lastName class="inputs-author"}}
+				</p>
+				<p>NickName: <br> 
+					{{input type="text" value=model.nickname class="inputs-author"}}
+				</p>
+				<p>Age: <br> 
+					{{input type="number" value=model.age class="inputs-author"}} 
+				</p>
+				<p>Full Name: <br> 
+					{{input type="text" value = model.fullName class="inputs-author"}}
+				</p>
+				<button class="btn" type="submit" disabled={{if model.isSaving 'true' ''}} >Save</button >
+				<button class="btn" disabled={{if model.isSaving 'true' ''}} {{action 'deleteBook' model on='click'}}>
+					Delete
+				</button>
+			</div>
+		</div>
+	
+	</form>--}}
+<form action="">
+     <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">First Name</label>
+    </div>
+</form>

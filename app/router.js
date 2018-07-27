@@ -11,7 +11,7 @@ Router.map(function() {
     this.route('book-list');
     this.route('book-edit', {path: 'book-edit/:id'});
     this.route('author-list');
-    this.route('author-edit');
+    this.route('author-edit', {path: 'author-edit/:id'});
     this.route('purchase-list');
     this.route('purchase-new');
     this.route('detail');

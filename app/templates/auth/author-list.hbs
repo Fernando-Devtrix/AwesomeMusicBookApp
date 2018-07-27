@@ -16,8 +16,10 @@
 		          </span>
 		        </div>
 		        <div class="col s2">
-		        	      <i class="material-icons more-vert">more_vert</i>
-		        </div>
+							{{#link-to 'auth.author-edit' author.id}}
+								<i class="material-icons more-vert">edit</i>
+							{{/link-to}}
+						</div>
 		      </div>
 		    </div>
 		</div>  

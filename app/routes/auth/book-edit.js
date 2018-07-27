@@ -9,7 +9,7 @@ export default Route.extend({
             book.save();
             this.transitionTo('auth.book-list');
         },
-
+            
         deleteBook(book) {
             book.destroyRecord().then(() => {
                 this.transitionTo('auth.book-list');
