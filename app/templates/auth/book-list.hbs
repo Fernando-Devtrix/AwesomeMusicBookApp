@@ -30,10 +30,9 @@
 							</span>
 						</div>
 						<div class="col s2">
-										<i class="material-icons more-vert">more_vert</i>
-										{{#link-to 'auth.book-edit' music-book.id}}
-												Edit
-										{{/link-to}}
+							{{#link-to 'auth.book-edit' music-book.id}}
+								<i class="material-icons edit">edit</i>					
+							{{/link-to}}
 						</div>
 					</div>
 				</div>
@@ -42,5 +41,7 @@
 {{/each}}	
 
 <div class="fixed-action-btn">
-		 <a class="btn-floating btn-large waves-effect waves-light fixed-action-btn color" {{action 'addBook' on='click'}}><i class="material-icons">add</i></a>
+	{{#link-to 'auth.book-add'}}
+		 <a class="btn-floating btn-large waves-effect waves-light fixed-action-btn color"><i class="material-icons">add</i></a>
+	{{/link-to}}
 </div>

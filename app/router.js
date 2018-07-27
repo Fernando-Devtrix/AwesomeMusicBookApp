@@ -15,6 +15,7 @@ Router.map(function() {
     this.route('purchase-list');
     this.route('purchase-new');
     this.route('detail');
+    this.route('book-add');
   });
 });
 
