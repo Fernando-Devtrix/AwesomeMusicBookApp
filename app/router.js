@@ -16,6 +16,7 @@ Router.map(function() {
     this.route('purchase-new');
     this.route('detail');
     this.route('book-add');
+    this.route('author-add');
   });
 });
 

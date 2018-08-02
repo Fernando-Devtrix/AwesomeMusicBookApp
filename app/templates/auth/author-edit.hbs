@@ -1,6 +1,6 @@
 <form {{action 'saveAuthor' model on='submit'}}>
-    <div class="">
-        <div class="">
+    <div>
+        <div>
 
              <div class="container form-group row">
                  <label for="example-text-input" class="col-2 col-form-label">Author Name</label>
@@ -19,9 +19,9 @@
                 <div class="col-10">
                 {{input class="form-control" type="text" value=model.nickname}}
                 </div>
-            </div>
              <button type="submit" class="btn btn-success" disabled={{if model.isSaving 'true' ''}}>Update Data</button>
              <button class="btn btn-danger" {{action 'destroyAuthor' model on='click'}}>Delete Author</button>
+            </div>
         </div>
     </div>
 </form>

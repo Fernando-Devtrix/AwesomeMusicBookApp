@@ -6,6 +6,7 @@ export default DS.Model.extend({
     first_name: DS.attr('string'),
     last_name: DS.attr('string'),
     nickname: DS.attr('string'),
+    musicBook: DS.hasMany('musicBook'),
 
     fullName: computed('first_name', 'last_name', 'nickname', function(){
         let first_name = this.get('first_name');
